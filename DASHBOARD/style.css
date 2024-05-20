@@ -1,0 +1,381 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    max-width: 1440px;
+    max-height: 1137px;
+}
+
+body {
+    max-width: 1440px;
+    max-height: 1137px;
+}
+
+.logines{
+    position: relative;
+    left: 160px;
+    top: 120px;
+}
+
+.sign-up-box2{
+    
+}
+
+.navbar-menu {
+    position: relative;
+    left: 133px;
+    margin-top: 21px;
+    width: 1174px;
+    height: 70px;
+    border-radius: 35px;
+    box-shadow: 0px 20px 27px 0px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(29.9px);
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 2;
+}
+
+.logo-text {
+    width: 121px;
+    height: 19px;
+    position: relative;
+    top: 25px;
+    left: 30px;
+
+    color: rgb(37, 47, 64);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: -1px;
+    letter-spacing: -0.39px;
+    cursor: pointer;
+}
+
+.navbar-mini-texts {
+    position: relative;
+    left: 330px;
+    top: 5px;
+    display: flex;
+    width: 500px;
+    gap: 22px;
+}
+
+.navbar-btn {
+    cursor: pointer;
+    position: relative;
+    width: 164px;
+    height: 34px;
+    border-radius: 17px;
+    background: linear-gradient(135.00deg, rgb(58, 65, 111) -45.879%, rgb(20, 23, 39) 54.121%);
+    left: 980px;
+    bottom: 20px;
+    border: none;
+    color: white;
+    transition: 1s ease all;
+}
+
+.navbar-btn:hover {
+    transform: scale(1.1);
+}
+
+/* sign */
+
+.big-text {
+    background: linear-gradient(135.00deg, rgb(33, 212, 253), rgb(33, 82, 255));
+    -webkit-background-clip:
+        text;
+    -webkit-text-fill-color:
+        transparent;
+    background-clip:
+        text;
+    text-fill-color:
+        transparent;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: -1px;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+.small-text {
+    color: rgb(131, 146, 171);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: -0.55px;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.ultra-small-text {
+    color: rgb(37, 47, 64);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: -1px;
+    letter-spacing: -0.33px;
+    text-align: left;
+    padding-top: 44px;
+}
+
+.box-sign {
+    position: relative;
+    padding-top: 0px;
+    padding-left: 5px;
+    text-align: left;
+    width: 361px;
+    height: 40px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 6px;
+
+    background: rgb(255, 255, 255);
+}
+
+/* 2 */
+.box-sign2 {
+    position: relative;
+    padding-top: 0px;
+    padding-left: 5px;
+    text-align: left;
+    width: 361px;
+    height: 40px;
+    color: black;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background: rgb(255, 255, 255);
+}
+
+.cl-toggle-switch {
+    cursor: pointer;
+    position: relative;
+}
+
+.cl-switch {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+/* Input */
+.cl-switch>input {
+    cursor: pointer;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    z-index: -1;
+    position: absolute;
+    right: 6px;
+    top: -8px;
+    display: block;
+    margin: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 0, 0, 0.38);
+    outline: none;
+    opacity: 0;
+    transform: scale(1);
+    pointer-events: none;
+    transition: opacity 0.3s 0.1s, transform 0.2s 0.1s;
+}
+
+/* Track */
+.cl-switch>span::before {
+    cursor: pointer;
+    content: "";
+    float: right;
+    display: inline-block;
+    margin: 5px 0 5px 10px;
+    border-radius: 7px;
+    width: 36px;
+    height: 14px;
+    background-color: rgb(0, 0, 0, 0.38);
+    vertical-align: top;
+    transition: background-color 0.2s, opacity 0.2s;
+}
+
+/* Thumb */
+.cl-switch>span::after {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 16px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+/* Checked */
+.cl-switch>input:checked {
+    cursor: pointer;
+    right: -10px;
+    background-color: #85b8b7;
+}
+
+.cl-switch>input:checked+span::before {
+    background-color: rgb(175, 192, 255);
+    ;
+}
+
+.cl-switch>input:checked+span::after {
+    background-color: rgb(33, 82, 255);
+    ;
+    transform: translateX(16px);
+}
+
+/* Hover, Focus */
+.cl-switch:hover>input {
+    opacity: 0.04;
+}
+
+.cl-switch>input:focus {
+    opacity: 0.12;
+}
+
+.cl-switch:hover>input:focus {
+    opacity: 0.16;
+}
+
+/* Active */
+.cl-switch>input:active {
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 0s, opacity 0s;
+}
+
+.cl-switch>input:active+span::before {
+    background-color: #8f8f8f;
+}
+
+.cl-switch>input:checked:active+span::before {
+    background-color: #85b8b7;
+}
+
+/* Disabled */
+.cl-switch>input:disabled {
+    opacity: 0;
+}
+
+.cl-switch>input:disabled+span::before {
+    background-color: #ddd;
+}
+
+.cl-switch>input:checked:disabled+span::before {
+    background-color: #bfdbda;
+}
+
+.cl-switch>input:checked:disabled+span::after {
+    background-color: #61b5b4;
+}
+
+
+.color-btn {
+    cursor: pointer;
+    width: 361px;
+    height: 40px;
+    border-radius: 8px;
+    border-color: #5a83ff;
+    color: white;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.07), 0px 4px 6px -1px rgba(0, 0, 0, 0.12);
+    background: linear-gradient(135.00deg, rgb(33, 212, 253) -48.787%, rgb(33, 82, 255) 51.213%);
+}
+
+.mini-text2 {
+    padding-top: 24px;
+    color: rgb(131, 146, 171);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: -1px;
+    letter-spacing: -0.39px;
+    float: left;
+    cursor: pointer;
+}
+
+.mini-text3 {
+    padding-top: 24px;
+    margin-left: 5px;
+    background: linear-gradient(135.00deg, rgb(33, 212, 253), rgb(33, 82, 255));
+    -webkit-background-clip:
+        text;
+    -webkit-text-fill-color:
+        transparent;
+    background-clip:
+        text;
+    text-fill-color:
+        transparent;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: -1px;
+    letter-spacing: -0.39px;
+    float: left;
+    cursor: pointer;
+}
+
+/* .mini-texts{
+  float: left;
+} */
+
+.sign-menu {
+    padding-left: 170px;
+    padding-top: 159px;
+}
+
+.image-curved {
+    /* image */
+    position: absolute;
+    width: 753.5px;
+    height: 876px;
+    left: 686.5px;
+    right: 0;
+    top: 0;
+    bottom: 261px;
+    z-index: 0;
+}
+
+.final-text {
+    color: rgb(131, 146, 171);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: -0.44px;
+}
+
+.just-texts {
+    float: left;
+    display: flex;
+    margin-left: 52px;
+    gap: 52px;
+    padding-top: 290px;
+}
+
+.license {
+    width: 500px;
+    padding-top: 30%;
+    position: relative;
+    left: 560px;
+}
+
+.license-text {
+    color: rgb(131, 146, 171);
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.icon {
+    float: left;
+    display: flex;
+    margin-left: 600px;
+    padding-top: 70px;
+    gap: 27px;
+    margin-bottom: 50px;
+    transition: 1s ease all;
+}
+
+span{
+    opacity: 0.5;
+    width: 100px;
+    height: 100px;
+}

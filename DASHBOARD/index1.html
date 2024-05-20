@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft UI Dashboard-login</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar-menu">
+                <h1 class="logo-text">Soft UI Dashboard</h1>
+                <div class="navbar-mini-texts">
+                    <img src="img1/dashboard.png" alt="img">
+                    <img src="img1/profile.png" alt="img">
+                    <img src="img1/sign up.png" alt="img">
+                    <img src="img1/sign n.png" alt="img">
+                </div>
+
+                <div class="button">
+                    <button class="navbar-btn">FREE DOWNLOAD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sign -->
+    <div class="logines">
+    <div class="login-boss">
+    <div class="loginForm">
+        <h1 class="big-text">Sign In</h1>
+
+        <p class="small-text">Enter your email and password to sign in</p>
+
+        <!-- 1 -->
+
+        <p class="ultra-small-text">Email</p>
+        <br>
+        <input id="username" type="text" class="box-sign" placeholder="Email"></input>
+
+        <!-- 2 -->
+        <p class="ultra-small-text">Password</p>
+        <br>
+        <input  type='password' id="password" class="box-sign2" placeholder="Password"></input>
+
+        <br>
+        <div class="cl-toggle-switch">
+            <label class="cl-switch">
+                <input type="checkbox">
+                <span>Remember me</span>
+            </label>
+        </div>
+       </div>
+        <br>
+
+        <button class="color-btn" onclick="login()">SIGN IN</button>
+
+        <div class="mini-texts">
+            <p class="mini-text2">Don’t have an account?</p>
+            <p class="mini-text3"> <a href="index4.html" class="sign-up-box2">Sign Up</a></p>
+        </div>
+    </div>
+</div>
+
+    <div class="image">
+        <div class="big-image">
+            <img src="img1/curved-lider.png" alt="" class="image-curved">
+        </div>
+    </div>
+
+    <div class="final-text">
+        <div class="final-just-text">
+            <p class="just-texts">Company</p>
+            <p class="just-texts">About Us</p>
+            <p class="just-texts">Team</p>
+            <p class="just-texts">Products</p>
+            <p class="just-texts">Blog</p>
+            <p class="just-texts">Pricing </p>
+        </div>
+    </div>
+
+    <div class="icon">
+        <img src="img1/basc.png" alt="" class="icons">
+        <img src="img1/twitter.png" alt="" class="icons">
+        <img src="img1/ins.png" alt="" class="icons">
+        <img src="img1/pin.png" alt="" class="icons">
+        <img src="img1/cat.png" alt="" class="icons">
+    </div>
+
+    <div class="license">
+        <p class="license-text">Copyright © 2021 Soft by Creative Tim.</p>
+    </div>
+
+    <script>
+        var attempts = 3; // Urinishlar soni
+        var lockoutTime = 30; // Blok vaqti (sekund)
+      
+        function login() {
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+      
+          if (username === "admin" && password === "1234") {
+            window.location.href = "index2.html"; 
+          } else {
+            attempts--;
+            if (attempts == 0) {
+              document.getElementById("username").disabled = true;
+              document.getElementById("password").disabled = true;
+              document.getElementById("loginForm").style.opacity = 0.5;
+              setTimeout(resetAttempts, lockoutTime * 1000);
+              var audio = new Audio('beep.mp3');
+              audio.play();
+              alert("3 marta xato kiritdingiz. Iltimos, " + lockoutTime + " sekund kutib, yana urinib ko'ring.");
+            } else {
+              var audio = new Audio('beep.mp3');
+              
+              audio.play();
+              document.getElementById("username").value = '';
+              document.getElementById("password").value = '';
+              document.getElementById("username").focus();
+              alert("Login yoki parol noto'g'ri! Qoldi: " + attempts + " urinish.");
+            }
+          }
+        }
+      
+        function resetAttempts() {
+          attempts = 3;
+          document.getElementById("username").disabled = false;
+          document.getElementById("password").disabled = false;
+          document.getElementById("loginForm").style.opacity = 1;
+        }
+      </script>
+
+</body>
+
+</html>

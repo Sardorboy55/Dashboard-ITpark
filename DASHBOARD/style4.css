@@ -1,0 +1,383 @@
+body {
+    width: 1440px;
+    height: 1252px;
+}
+
+.bg {
+    align-items: center;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+
+
+.navbar {
+
+    width: 100%;
+    height: 80px;
+    background: rgb(248, 249, 250);
+}
+
+* {
+    max-width: 1440px;
+    font-family: Open Sans;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+li {
+    position: relative;
+    left: 6.5px;
+    float: right;
+}
+
+.sign-in-box{
+    text-decoration-line: none;
+    color: rgb(255, 255, 255);
+}
+
+.sign-up-box{
+    text-decoration-line: none;
+    color: rgb(255, 255, 255);
+}
+
+.sign-in-box2{
+    text-decoration-line: none;
+    color: rgb(20, 20, 20);;
+}
+
+.dashboard-box{
+    text-decoration-line: none;
+    color: rgb(255, 255, 255);
+}
+
+ul {
+    position: relative;
+    bottom: 545px;
+    justify-content: center;
+    align-items: center;
+    gap: 38.5px;
+    display: flex;
+    list-style: none;
+
+
+
+    color: rgb(255, 255, 255);
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: -0.39px;
+    text-align: left;
+}
+
+.images {
+    position: relative;
+
+}
+
+.justify {
+    position: relative;
+    bottom: 510px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 1000px;
+}
+
+.button {
+    color: rgb(20, 20, 20);
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: -1px;
+    letter-spacing: -0.33px;
+    text-align: center;
+    padding-top: 8px;
+
+    color: #000000;
+    width: 164px;
+    height: 34px;
+    border-radius: 17px;
+
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.07), 0px 4px 7px -1px rgba(0, 0, 0, 0.11);
+    background: rgb(255, 255, 255);
+}
+
+.logo {
+
+    color: rgb(255, 255, 255);
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: -1px;
+    letter-spacing: -0.39px;
+    text-align: left;
+}
+
+/* sign */
+
+.sign-up {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: -1px;
+    letter-spacing: -1.33px;
+
+
+}
+
+.sign-text {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.44px;
+    width: 480px;
+    opacity: 0.6;
+    position: relative;
+    left: 500px;
+    padding-top: 6px;
+}
+
+.signes {
+    padding-top: 110px;
+    text-align: center;
+}
+
+.signes2 {
+    padding-top: 6px;
+    position: relative;
+    left: 500px;
+    text-align: center;
+}
+
+/* 2 */
+
+.login-menu {
+    position: relative;
+    top: 70px;
+    left: 515px;
+    display: flex;
+
+    border-radius: 12px;
+    width: 409px;
+    height: 549px;
+    box-shadow: 0px 20px 27px 0px rgba(0, 0, 0, 0.05);
+    background: rgb(255, 255, 255);
+}
+
+.login-menu-text {
+    padding-top: 23px;
+    color: rgb(37, 47, 64);
+    position: relative;
+    left: 140px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: -1px;
+    letter-spacing: -0.55px;
+}
+
+
+.login-menu-box {
+    border: 1px solid rgb(131, 146, 171);
+    border-radius: 8px;
+
+    background: rgb(255, 255, 255);
+    opacity: 0.2;
+    width: 76px;
+    height: 56px;
+    position: relative;
+    top: 100px;
+    right: 30px;
+    justify-content: space-between;
+}
+
+/* 3 */
+
+.boxes {
+    border: 1px solid rgb(131, 146, 171);
+    border-radius: 8px;
+
+    background: rgb(255, 255, 255);
+
+    width: 76px;
+    height: 56px;
+
+}
+
+.login-menu-boxes {
+    display: flex;
+    gap: 30px;
+    align-content: center;
+    padding-top: 84.67px;
+    position: relative;
+    right: 60px;
+}
+
+.boxes-image {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.mini-text {
+    color: rgb(131, 146, 171);
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: -1px;
+    letter-spacing: -0.39px;
+    text-align: center;
+
+    padding-top: 35px;
+    position: relative;
+    right: 110px;
+}
+
+.log-menu {
+    position: relative;
+    right: 250px;
+    top: 20px;
+}
+
+
+
+::placeholder {
+    position: relative;
+    left: 12px;
+}
+
+.menu-text {
+
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 6px;
+
+    background: rgb(255, 255, 255);
+    width: 361px;
+    height: 40px;
+}
+
+.menu-email {
+
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 6px;
+
+    background: rgb(255, 255, 255);
+    width: 361px;
+    height: 40px;
+    position: relative;
+    top: 17px;
+}
+
+.menu-password {
+
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 6px;
+
+    background: rgb(255, 255, 255);
+    width: 361px;
+    height: 40px;
+    position: relative;
+    top: 35px;
+}
+
+.checkboxik {
+    position: relative;
+    top: 70px;
+    right: 245px;
+}
+
+
+.check-text {
+    color: rgb(0, 0, 0);
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -0.39px;
+    text-align: left;
+    padding-top: 48px;
+    width: 250px;
+    position: relative;
+    right: 220px;
+
+
+}
+
+.big {
+    color: rgb(38, 52, 157);
+    opacity: 0.8;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.small {
+    font-weight: lighter;
+}
+
+.log-textes2 {
+    padding-top: 5px;
+}
+
+.login-button {
+    position: relative;
+    right: 250px;
+    top: 25px;
+    color: #FFFF;
+
+    width: 361px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.07), 0px 4px 6px -1px rgba(0, 0, 0, 0.12);
+    background: linear-gradient(135.00deg, rgb(58, 65, 111) -48.787%, rgb(20, 23, 39) 51.213%);
+}
+
+.sign-text-2 {
+    color: rgb(131, 146, 171);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: -0.39px;
+    text-align: left;
+    width: 250px;
+    position: relative;
+    top: 50px;
+    right: 180px;
+}
+
+.big2 {
+    font-weight: 600;
+    color: #000000;
+}
+
+.down-text {
+    width: 600px;
+    top: 190px;
+    display: flex;
+    position: relative;
+    right: 360px;
+    color: #000000;
+    gap: 53px;
+    cursor: pointer;
+    color: rgb(131, 146, 171);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: -0.44px;
+}
+
+.final-text-down {
+    color: rgb(131, 146, 171);
+    position: relative;
+    top: 310px;
+    right: 200px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: -0.44px;
+    width: 300px;
+}
